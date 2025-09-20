@@ -1,34 +1,34 @@
 package controlador;
 
 import modelo.Estudiante;
-import vista.vistaEstudiante;
+import vista.VistaEstudiante;
 
-public class controladorEstudiante {
-  private Estudiante modelo;
-  private vistaEstudiante vista;
+public class ControladorEstudiante {
+    private Estudiante estudiante;
+    private VistaEstudiante vista;
 
-  public controladorEstudiante(Estudiante modelo, vistaEstudiante vista) {
-    this.modelo = modelo;
-    this.vista = vista;
-  }
+    public ControladorEstudiante(Estudiante estudiante, VistaEstudiante vista) {
+        this.estudiante = estudiante;
+        this.vista = vista;
+    }
 
-  public void setNombreEstudiante(String nombre) {
-    modelo.setNombre(nombre);
-  }
+    public void actualizarNombre(String nombre) {
+        estudiante.setNombre(nombre);
+    }
 
-  public String getNombreEstudiante() {
-    return modelo.getNombre();
-  }
+    public void actualizarEdad(int edad) {
+        estudiante.setEdad(edad);
+    }
 
-  public void setEdadEstudiante(int edad) {
-    modelo.setEdad(edad);
-  }
+    public String obtenerNombre() {
+        return estudiante.getNombre();
+    }
 
-  public int getEdadEstudiante() {
-    return modelo.getEdad();
-  }
+    public int obtenerEdad() {
+        return estudiante.getEdad();
+    }
 
-  public void actualizarVista() {
-    vista.mostrarDetallesEstudiante(modelo.getNombre(), modelo.getEdad());
-  }
+    public void mostrarVista() {
+        vista.mostrarDetallesEstudiante(estudiante.getNombre(), estudiante.getEdad());
+    }
 }
