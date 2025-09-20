@@ -1,3 +1,4 @@
+package Modelo;
 public class Estudiante {
 
   private String nombre;
