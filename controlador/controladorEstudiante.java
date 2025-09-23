@@ -6,6 +6,7 @@ import vista.VistaEstudiante;
 public class ControladorEstudiante {
     private Estudiante estudiante;
     private VistaEstudiante vista;
+    private 
 
     public ControladorEstudiante(Estudiante estudiante, VistaEstudiante vista) {
         this.estudiante = estudiante;
