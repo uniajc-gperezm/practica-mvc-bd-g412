@@ -24,7 +24,7 @@ public class Estudiante {
         return edad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
+    public void mostrarInfo() {
+    System.out.println("Nombre: " + nombre + ", Edad: " + edad);
+}
 }
